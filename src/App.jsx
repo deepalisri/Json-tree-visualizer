@@ -28,16 +28,18 @@ function App() {
         <div>
           <JsonInput onVisualize={handleVisualize} />
           <SearchBar onSearch={handleSearch} />
+          {!jsonData ? 
+          <p className="placeholder">Enter JSON and click Visualize to see the tree</p>
+          : null}
         </div>
-        {jsonData ? (
+
+        {jsonData && (
           <TreeVisualizer
             data={jsonData}
             searchQuery={searchQuery}
             highlightNode={highlightNode}
             onHighlight={handleHighlight}
           />
-        ) : (
-          <p className="placeholder">Enter JSON and click Visualize to see the tree</p>
         )}
       </div>
     </div>
