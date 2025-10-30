@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import JsonInput from './components/jsonInput';
 import TreeVisualizer from './components/treeVisualizer';
 import SearchBar from './components/searchBar';

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import ReactFlow, { Controls, Background, MiniMap } from 'reactflow';
+import { useEffect, useState } from 'react';
+import ReactFlow, { Controls, Background } from 'reactflow';
 import 'reactflow/dist/style.css';
 import { jsonToNodes } from '../utils/jsonToNode';
 import { searchNode } from '../utils/searchNode';
