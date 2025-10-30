@@ -1,0 +1,27 @@
+@import './styles/input.scss';
+@import './styles/visualizer.scss';
+@import './styles/search.scss';
+
+.app {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 1rem;
+  background: #f6f8fa;
+  min-height: 100vh;
+
+  &__title {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+
+  .placeholder {
+    color: #666;
+    font-size: 14px;
+  }
+}

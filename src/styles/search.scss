@@ -1,0 +1,28 @@
+@import './colors';
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px;
+
+  &__input {
+    padding: 8px;
+    width: 240px;
+    border: 1px solid $input-border;
+    border-radius: 6px;
+  }
+
+  &__btn {
+    background-color: $search-btn-bg;
+    color: $btn-text;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $search-btn-hover;
+    }
+  }
+}

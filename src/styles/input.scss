@@ -1,0 +1,36 @@
+@import './colors';
+.json-input {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  min-width: 300px;
+  margin: 10px;
+
+  &__area {
+    resize: none;
+    padding: 10px;
+    border: 1px solid $input-border;
+    font-family: monospace;
+    border-radius: 6px;
+  }
+
+  &__error {
+    color: $error-color;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  &__btn {
+    background-color: $btn-primary;
+    color: $visualizer-bg;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+
+    &:hover {
+      background-color: $btn-primary-hover;
+    }
+  }
+}

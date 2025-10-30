@@ -1,0 +1,32 @@
+$app-background:     #f6f8fa; // from App.scss background
+$title-color:        #333333; // used for headings (.app__title) and .tree-msg
+$placeholder-color:  #666666; // .placeholder text
+
+$input-border:       #cccccc; // border: 1px solid #ccc
+$input-font:         monospace;
+
+$btn-primary:        #5a67d8; // .json-input__btn background
+$btn-primary-hover:  #434190; // .json-input__btn hover
+$btn-text:           #ffffff; // white for button text
+
+$search-btn-bg:      #48bb78; // .search-bar__btn
+$search-btn-hover:   #38a169; // .search-bar__btn:hover
+$search-input-border: #cccccc; // same as input border
+
+$visualizer-bg:      #ffffff; // .tree-container background
+$reactflow-background: #aaaaaa; // ReactFlow Background color prop "#aaa"
+$tree-msg-color:     #333333; // .tree-msg
+
+// Colors from jsonToNodes.js (node fill colors)
+$node-object:        #c7b8ff; // object node background
+$node-array:         #b2f5ea; // array node background
+$node-primitive:     #fcd34d; // primitive node background
+
+// Literal used in SCSS
+$error-color:        #ff0000; // json-input__error used "red" -> mapped to pure red
+
+// Utility / semantic tokens (not present but convenient)
+$text-primary:       #0f172a; // (optional) if you want a darker text color later
+$text-secondary:     #475569; // (optional)
+$border-muted:       #e5e7eb; // (optional)
+
