@@ -5,13 +5,14 @@ import { jsonToNodes } from '../utils/jsonToNode';
 import { searchNode } from '../utils/searchNode';
 import '../styles/visualizer.scss';
 
-function TreeVisualizer({ data, searchQuery, highlightNode, onHighlight }) {
+function TreeVisualizer({ data, searchQuery, onHighlight }) {
   const [elements, setElements] = useState({ nodes: [], edges: [] });
   const [message, setMessage] = useState('');
 
   useEffect(() => {
     const { nodes, edges } = jsonToNodes(data);
     setElements({ nodes, edges });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   useEffect(() => {
@@ -32,6 +33,7 @@ function TreeVisualizer({ data, searchQuery, highlightNode, onHighlight }) {
         setMessage('❌ No match found');
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchQuery]);
 
   return (
